@@ -1,0 +1,52 @@
+.article {
+	width: 70%;
+	background-color: white;
+	background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.65) 47%, rgba(237,237,237,0.25) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.65)), color-stop(100%, rgba(237,237,237,0.25)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.65) 47%, rgba(237,237,237,0.25) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.65) 47%, rgba(237,237,237,0.25) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.65) 47%, rgba(237,237,237,0.25) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.65) 47%, rgba(237,237,237,0.25) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+	border-radius: 17px 17px 17px 17px;
+-moz-border-radius: 17px 17px 17px 17px;
+-webkit-border-radius: 17px 17px 17px 17px;
+border: 0px solid #000000;
+	-webkit-box-shadow: 10px 10px 76px -1px rgba(0,0,0,0.59);
+-moz-box-shadow: 10px 10px 76px -1px rgba(0,0,0,0.59);
+box-shadow: 10px 10px 76px -1px rgba(0,0,0,0.59);
+}
+.article-thumbnail img {
+	width: 100%;
+}
+.article-title a {
+	transition: color ease-in-out 250ms;
+}
+.article-title a:hover {
+	color: crimson;
+}
+@media only screen and (max-width: 1024px) {
+	.article {
+		width: 100%;
+		height: auto;
+	}
+}
+.article-title,
+.article-section,
+.article-footer {padding: 10px;}
+.article-likes {
+	color: #00CED1;
+}
+.article-comments {
+	color: ;
+}
+.article-reposts,
+.article-likes,
+.article-views,
+.article-comments {
+	width: 24%;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;	
+}

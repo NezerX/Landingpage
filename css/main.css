@@ -1,0 +1,125 @@
+body {
+    color: #444;
+    background-image: url(https://avatanplus.com/files/resources/original/57821ddd467fa155d444a869.jpg);
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    background-color: #111;
+}
+
+nav a {
+    color: #e7e7e7;
+    padding: 10px 14px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color ease-in-out 450ms, background-color ease-in-out 450ms;
+}
+
+nav a:hover {
+    color: #0070c9;
+    background-color: #222;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .sub-menu {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow-x: hidden;
+        transform: translateY(-100%);
+        background-color: rgba(0, 0, 0, 0.90);
+        transition: transform ease-in-out 500ms, opacity ease-in-out 500ms;
+    }
+
+    .active-sub-menu {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sub-menu a {
+        opacity: 0;
+        width: 100%;
+        padding: 15px 20px;
+        transform: translateY(-50px);
+        transition-timing-function: ease-in-out;
+        transition-property: opacity, color, background-color, transform;
+    }
+
+    .active-sub-menu a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .active-sub-menu .link-about {
+        transition-delay: 100ms;
+    }
+
+    .active-sub-menu .link-services {
+        transition-delay: 200ms;
+    }
+
+    .active-sub-menu .link-contacts {
+        transition-delay: 300ms;
+    }
+
+    .sub-menu a:first-child {
+        margin-top: 50px;
+    }
+
+    .stripe-1,
+    .stripe-2 {
+        height: 1px;
+        width: 100%;
+        background-color: #f8f8f8;
+        transition: transform ease-in-out 350ms;
+    }
+
+    .stripe-1 {
+        transform: translateY(14px) rotateZ(0deg);
+    }
+
+    .stripe-2 {
+        transform: translateY(23px) rotateZ(0deg);
+    }
+
+    .burger-wrapper {
+        width: 26px;
+        height: 38px;
+        z-index: 100;
+        position: relative;
+    }
+
+    .active-burger .stripe-1 {
+        transform: translateY(19px) rotateZ(30deg);
+    }
+
+    .active-burger .stripe-2 {
+       transform: translateY(18px) rotateZ(-30deg); 
+    }
+}
